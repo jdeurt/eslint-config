@@ -6,6 +6,8 @@ module.exports = {
         "plugin:react-hooks/recommended",
     ],
 
+    plugins: ["react"],
+
     rules: {
         "react/jsx-sort-props": "warn",
         "react/prefer-read-only-props": "error",
