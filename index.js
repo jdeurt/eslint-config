@@ -12,8 +12,11 @@ module.exports = {
     extends: [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:@typescript-eslint/strict",
         "plugin:unicorn/recommended",
         "prettier",
+        "plugin:sonarjs/recommended",
     ],
 
     plugins: ["@typescript-eslint"],
@@ -23,8 +26,16 @@ module.exports = {
     },
 
     rules: {
+        // Imports
         "sort-imports": "warn",
         "@typescript-eslint/consistent-type-imports": "warn",
+
+        // Naming
         "unicorn/prevent-abbreviations": "off",
+
+        // Syntax
+        "no-shadow": "error",
+        curly: ["error", "all"],
+        "@typescript-eslint/member-ordering": "error",
     },
 };
