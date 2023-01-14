@@ -34,7 +34,8 @@ module.exports = {
         "unicorn/prevent-abbreviations": "off",
 
         // Syntax
-        "no-shadow": "error",
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": "warn",
         curly: ["error", "all"],
         "@typescript-eslint/member-ordering": "error",
         "@typescript-eslint/method-signature-style": "warn",
