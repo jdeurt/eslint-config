@@ -37,5 +37,6 @@ module.exports = {
         "no-shadow": "error",
         curly: ["error", "all"],
         "@typescript-eslint/member-ordering": "error",
+        "@typescript-eslint/method-signature-style": "warn",
     },
 };
