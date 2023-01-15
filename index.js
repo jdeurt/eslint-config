@@ -7,6 +7,12 @@ const tsConfig = fs.existsSync("tsconfig.json")
     ? path.resolve("types/tsconfig.json")
     : undefined;
 
+if (tsConfig === undefined) {
+    throw new Error(
+        "@jdeurt/eslint-config requires that this project be a Typescript project. Could not find tsconfig.json or types/tsconfig.json!"
+    );
+}
+
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
     extends: [
