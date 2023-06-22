@@ -27,7 +27,7 @@ module.exports = {
 
     rules: {
         // Imports
-        "sort-imports": "warn",
+        "sort-imports": "off",
         "@typescript-eslint/consistent-type-imports": "warn",
 
         // Naming
@@ -43,5 +43,8 @@ module.exports = {
             "error",
             { ignoreRestArgs: true },
         ],
+
+        // Comments
+        "unicorn/expiring-todo-comments": "off",
     },
 };
