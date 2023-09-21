@@ -28,7 +28,6 @@
         "eslintconfig",
         "eslint",
         "config",
-        "typescript",
-        "react"
+        "typescript"
     ]
 }
